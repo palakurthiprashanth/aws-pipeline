@@ -181,13 +181,13 @@
                   "Version": "1"
                 },
                 "Configuration": {
-                  "Owner": "prashanth",
+                  "Owner": "palakurthiprashanth",
                   "Repo": "aws-pipeline",
                   "Branch": "master",
-                  "OAuthToken": "{{resolve:secretsmanager:github-code-pipeline-token:SecretString:::}}",
+                  "OAuthToken": "{{resolve:secretsmanager:github-token:SecretString:::}}",
                   "PollForSourceChanges": false
                 },
-                "Name": "GitHub_Source",
+                "Name": "Github_Source",
                 "OutputArtifacts": [
                   {
                     "Name": "sourceOutput"
@@ -251,12 +251,12 @@
         "aws:cdk:path": "PipelineStack/Pipeline/Resource"
       }
     },
-    "PipelineSourceGitHubSourceWebhookResource8EECEFFF": {
+    "PipelineSourceGithubSourceWebhookResource3373B459": {
       "Type": "AWS::CodePipeline::Webhook",
       "Properties": {
         "Authentication": "GITHUB_HMAC",
         "AuthenticationConfiguration": {
-          "SecretToken": "{{resolve:secretsmanager:github-code-pipeline-token:SecretString:::}}"
+          "SecretToken": "{{resolve:secretsmanager:github-token:SecretString:::}}"
         },
         "Filters": [
           {
@@ -264,7 +264,7 @@
             "MatchEquals": "refs/heads/{Branch}"
           }
         ],
-        "TargetAction": "GitHub_Source",
+        "TargetAction": "Github_Source",
         "TargetPipeline": {
           "Ref": "PipelineC660917D"
         },
@@ -272,7 +272,7 @@
         "RegisterWithThirdParty": true
       },
       "Metadata": {
-        "aws:cdk:path": "PipelineStack/Pipeline/Source/GitHub_Source/WebhookResource"
+        "aws:cdk:path": "PipelineStack/Pipeline/Source/Github_Source/WebhookResource"
       }
     },
     "PipelineBuildCodePipelineActionRoleD77A08E6": {

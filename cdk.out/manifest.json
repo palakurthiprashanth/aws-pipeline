@@ -22,7 +22,7 @@
             "trace": [
               "new Bucket (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1664:22)",
               "new Pipeline (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:398:21)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:12:21)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:11:21)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -52,7 +52,7 @@
               "Bucket.enforceSSLStatement (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1796:10)",
               "new Bucket (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1706:12)",
               "new Pipeline (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:398:21)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:12:21)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:11:21)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -79,7 +79,7 @@
             "trace": [
               "new Role (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-iam/lib/role.ts:358:18)",
               "new Pipeline (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:410:31)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:12:21)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:11:21)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -111,7 +111,7 @@
               "Bucket.grant (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:913:27)",
               "Bucket.grantReadWrite (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:775:17)",
               "new Pipeline (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:426:25)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:12:21)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:11:21)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -137,7 +137,7 @@
             "data": "PipelineC660917D",
             "trace": [
               "new Pipeline (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:414:26)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:12:21)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:11:21)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -157,10 +157,10 @@
             ]
           }
         ],
-        "/PipelineStack/Pipeline/Source/GitHub_Source/WebhookResource": [
+        "/PipelineStack/Pipeline/Source/Github_Source/WebhookResource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "PipelineSourceGitHubSourceWebhookResource8EECEFFF",
+            "data": "PipelineSourceGithubSourceWebhookResource3373B459",
             "trace": [
               "GitHubSourceAction.bound (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline-actions/lib/github/source-action.ts:132:7)",
               "GitHubSourceAction.bind (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
@@ -170,7 +170,7 @@
               "Stage.addAction (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:93:29)",
               "new Stage (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:40:12)",
               "Pipeline.addStage (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:461:19)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:19:14)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:18:14)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -202,7 +202,7 @@
               "Stage.addAction (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:93:29)",
               "new Stage (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:40:12)",
               "Pipeline.addStage (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:461:19)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:34:14)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:33:14)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -238,7 +238,7 @@
               "Stage.addAction (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:93:29)",
               "new Stage (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:40:12)",
               "Pipeline.addStage (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:461:19)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:34:14)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:33:14)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -266,7 +266,7 @@
               "new Role (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-iam/lib/role.ts:358:18)",
               "new Project (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1020:31)",
               "new PipelineProject (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:41:20)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:40:20)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -296,7 +296,7 @@
               "PipelineProject.addToRolePolicy (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:290:17)",
               "new Project (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1119:10)",
               "new PipelineProject (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:41:20)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:40:20)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",
@@ -323,7 +323,7 @@
             "trace": [
               "new Project (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1073:22)",
               "new PipelineProject (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
-              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:41:20)",
+              "new PipelineStack (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/lib/aws-stack.ts:40:20)",
               "Object.<anonymous> (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/bin/aws.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1101:14)",
               "Module.m._compile (/Users/prashanthpalakurthi/Desktop/Auto1/AWS/node_modules/ts-node/src/index.ts:1056:23)",

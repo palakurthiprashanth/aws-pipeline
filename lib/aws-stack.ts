@@ -8,7 +8,6 @@ import { BuildSpec, LinuxBuildImage, PipelineProject } from '@aws-cdk/aws-codebu
 export class PipelineStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
     const pipeline= new Pipeline(this, "Pipeline", {
       pipelineName: 'Pipeline',
       crossAccountKeys: false,
@@ -20,10 +19,10 @@ export class PipelineStack extends cdk.Stack {
       stageName: 'Source',
       actions: [
         new GitHubSourceAction({
-          actionName: 'GitHub_Source',
-          owner: 'prashanth',
+          actionName: 'Github_Source',
+          owner: 'palakurthiprashanth',
           repo: 'aws-pipeline',
-          oauthToken: SecretValue.secretsManager('github-code-pipeline-token'),
+          oauthToken: SecretValue.secretsManager('github-token'),
           output: sourceOutput,
         })
       ]

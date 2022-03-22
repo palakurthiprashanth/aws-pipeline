@@ -256,7 +256,7 @@
                         "name": "Source",
                         "actions": [
                           {
-                            "name": "GitHub_Source",
+                            "name": "Github_Source",
                             "outputArtifacts": [
                               {
                                 "name": "sourceOutput"
@@ -269,10 +269,10 @@
                               "provider": "GitHub"
                             },
                             "configuration": {
-                              "Owner": "prashanth",
+                              "Owner": "palakurthiprashanth",
                               "Repo": "aws-pipeline",
                               "Branch": "master",
-                              "OAuthToken": "{{resolve:secretsmanager:github-code-pipeline-token:SecretString:::}}",
+                              "OAuthToken": "{{resolve:secretsmanager:github-token:SecretString:::}}",
                               "PollForSourceChanges": false
                             },
                             "runOrder": 1
@@ -334,19 +334,19 @@
                 "id": "Source",
                 "path": "PipelineStack/Pipeline/Source",
                 "children": {
-                  "GitHub_Source": {
-                    "id": "GitHub_Source",
-                    "path": "PipelineStack/Pipeline/Source/GitHub_Source",
+                  "Github_Source": {
+                    "id": "Github_Source",
+                    "path": "PipelineStack/Pipeline/Source/Github_Source",
                     "children": {
                       "WebhookResource": {
                         "id": "WebhookResource",
-                        "path": "PipelineStack/Pipeline/Source/GitHub_Source/WebhookResource",
+                        "path": "PipelineStack/Pipeline/Source/Github_Source/WebhookResource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::CodePipeline::Webhook",
                           "aws:cdk:cloudformation:props": {
                             "authentication": "GITHUB_HMAC",
                             "authenticationConfiguration": {
-                              "secretToken": "{{resolve:secretsmanager:github-code-pipeline-token:SecretString:::}}"
+                              "secretToken": "{{resolve:secretsmanager:github-token:SecretString:::}}"
                             },
                             "filters": [
                               {
@@ -354,7 +354,7 @@
                                 "matchEquals": "refs/heads/{Branch}"
                               }
                             ],
-                            "targetAction": "GitHub_Source",
+                            "targetAction": "Github_Source",
                             "targetPipeline": {
                               "Ref": "PipelineC660917D"
                             },
