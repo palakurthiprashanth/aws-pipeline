@@ -1,0 +1,141 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.149.0"
+        }
+      },
+      "AwsStack": {
+        "id": "AwsStack",
+        "path": "AwsStack",
+        "children": {
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "AwsStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "AwsStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.149.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "AwsStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.149.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.149.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.149.0"
+        }
+      },
+      "BillingStack": {
+        "id": "BillingStack",
+        "path": "BillingStack",
+        "children": {
+          "Budget": {
+            "id": "Budget",
+            "path": "BillingStack/Budget",
+            "children": {
+              "Budget": {
+                "id": "Budget",
+                "path": "BillingStack/Budget/Budget",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Budgets::Budget",
+                  "aws:cdk:cloudformation:props": {
+                    "budget": {
+                      "budgetType": "COST",
+                      "budgetName": "Monthly Budget",
+                      "timeUnit": "MONTHLY",
+                      "budgetLimit": {
+                        "amount": 1,
+                        "unit": "USD"
+                      }
+                    },
+                    "notificationsWithSubscribers": [
+                      {
+                        "notification": {
+                          "threshold": 0,
+                          "notificationType": "ACTUAL",
+                          "comparisonOperator": "GREATER_THAN",
+                          "thresholdType": "ABSOLUTE_VALUE"
+                        },
+                        "subscribers": [
+                          {
+                            "subscriptionType": "EMAIL",
+                            "address": "palakurthi.prashanth1@gmail.com"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-budgets.CfnBudget",
+                  "version": "1.149.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.149.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "BillingStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "BillingStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.149.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "BillingStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.149.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.149.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.149.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.149.0"
+    }
+  }
+}

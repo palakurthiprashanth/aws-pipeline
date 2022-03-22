@@ -2,6 +2,7 @@
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
 import { AwsStack } from '../lib/aws-stack';
+import { BillingStack } from '../lib/billingStack';
 
 const app = new cdk.App();
 new AwsStack(app, 'AwsStack', {
@@ -17,5 +18,10 @@ new AwsStack(app, 'AwsStack', {
    * want to deploy the stack to. */
   // env: { account: '123456789012', region: 'us-east-1' },
 
-  /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+  /* For more information, see  https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+});
+
+new BillingStack(app, "BillingStack", {
+  billingAmount: 0,
+  email: 'palakurthi.prashanth1@gmail.com'
 });
