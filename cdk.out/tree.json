@@ -728,7 +728,7 @@
                     },
                     "source": {
                       "type": "CODEPIPELINE",
-                      "buildSpec": "../build-specs/cdk-build.spec.yml"
+                      "buildSpec": "buildspec.yml"
                     },
                     "cache": {
                       "type": "NO_CACHE"

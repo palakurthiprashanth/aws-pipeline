@@ -42,7 +42,7 @@ export class PipelineStack extends cdk.Stack {
               buildImage: LinuxBuildImage.STANDARD_5_0
             },
             buildSpec: BuildSpec.fromSourceFilename(
-              "build-specs/cdk-build-spec.yml"
+              "buildspec.yml"
             )
           })
         })
