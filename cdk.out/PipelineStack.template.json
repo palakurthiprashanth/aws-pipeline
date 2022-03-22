@@ -530,7 +530,7 @@
           ]
         },
         "Source": {
-          "BuildSpec": "build-specs/cdk-build.spec.yml",
+          "BuildSpec": "cdk-build.spec.yml",
           "Type": "CODEPIPELINE"
         },
         "Cache": {
